@@ -1,0 +1,106 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/ 
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navegacion {  
+    display: flex;
+    background-color: rgb(34, 179, 171);
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    align-items: center ;
+}
+
+.menu {
+    display: flex;
+    align-content: space-between ;
+    margin: 2%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 60px;   
+    background-color: brown;
+    flex-wrap: wrap;
+
+}
+
+
+/*footer*/
+
+.info {
+    display: block;
+    width: 99%;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #009165;
+}
+
+.links {
+    color: rgb(187, 0, 0);
+
+}
+
+
+/*body pagina principal*/
+
+
+.contenido-principal{
+    display: flex;
+    flex-direction:row-reverse;
+    gap: 25px;
+    margin: 1%;
+}
+
+.titulo {
+     color: rgb(0, 29, 92);
+     font-size:2rem;
+}
+.titulo-2 {
+    color: #27006e;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+}
+      
+.visual {
+    background-color: #27006e;
+    gap: 1%;
+    width: 180px;
+    height: 180px;
+}
+
+/*main cpu*/
+
+.cpu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1%;
+    padding: 1rem;
+    background-color: #7a0000
+}
+
+.cpu .galeria-cpu{
+    display: flex;
+    flex-direction: column;
+    background-image:green ;
+    gap: 1rem;
+}
+
+.cpu .galeria-cpu .muestra {
+    display: block;
+    width: 240px;
+    height: 240px; 
+    background-color: rgb(116, 116, 116);
+}
+
