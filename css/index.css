@@ -25,10 +25,10 @@
     margin: 2%;
 }
 
+
 .menu ul {
     display: flex;
     gap: 60px;   
-    background-color: brown;
     flex-wrap: wrap;
 
 }
@@ -44,9 +44,10 @@
     background-color: #009165;
 }
 
-.links {
-    color: rgb(187, 0, 0);
 
+.links a {
+    color: rgb(131, 6, 6);
+    gap: 5rem;
 }
 
 
@@ -98,6 +99,83 @@
 }
 
 .cpu .galeria-cpu .muestra {
+    display: block;
+    width: 240px;
+    height: 240px; 
+    background-color: rgb(116, 116, 116);
+}
+
+/*main gpu*/
+
+.gpu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1%;
+    padding: 1rem;
+    background-color: #7a0000
+}
+
+.gpu .galeria-gpu{
+    display: flex;
+    flex-direction: column;
+    background-image:green ;
+    gap: 1rem;
+}
+
+.gpu .galeria-gpu .muestra {
+    display: block;
+    width: 240px;
+    height: 240px; 
+    background-color: rgb(116, 116, 116);
+}
+
+
+
+
+
+/*main ram*/
+
+
+.ram {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1%;
+    padding: 1rem;
+    background-color: #7a0000
+}
+
+.ram .galeria-ram{
+    display: flex;
+    flex-direction: column;
+    background-image:green ;
+    gap: 1rem;
+}
+
+.ram .galeria-ram .muestra {
+    display: block;
+    width: 240px;
+    height: 240px; 
+    background-color: rgb(116, 116, 116);
+}
+    /*main motherboard */
+
+
+.mother {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1%;
+    padding: 1rem;
+    background-color: #7a0000
+}
+
+.mother .galeria-mother{
+    display: flex;
+    flex-direction: column;
+    background-image:green ;
+    gap: 1rem;
+}
+
+.mother .galeria-mother .muestra {
     display: block;
     width: 240px;
     height: 240px; 
