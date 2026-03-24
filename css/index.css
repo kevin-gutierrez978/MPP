@@ -1,184 +1,175 @@
 /*reset*/
+
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
+    list-style: none;
 }
-
-/*header*/ 
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
-.navegacion {  
-    display: flex;
-    background-color: rgb(34, 179, 171);
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    align-items: center ;
-}
-
-.menu {
-    display: flex;
-    align-content: space-between ;
-    margin: 2%;
-}
-
-
-.menu ul {
-    display: flex;
-    gap: 60px;   
-    flex-wrap: wrap;
-
-}
-
-
-/*footer*/
-
-.info {
-    display: block;
-    width: 99%;
-    margin: 1rem;
-    padding: 0.5rem;
-    background-color: #009165;
-}
-
-
-.links a {
-    color: rgb(131, 6, 6);
-    gap: 5rem;
-}
-
 
 /*body pagina principal*/
+body{
+    background-color: rgba(219, 219, 219, 0.74);
+}
+.layout{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
 
+/*navegación*/
 
-.contenido-principal{
+header { 
     display: flex;
-    flex-direction:row-reverse;
-    gap: 25px;
-    margin: 1%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.titulo {
-     color: rgb(0, 29, 92);
-     font-size:2rem;
+.img-logo{
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
-.titulo-2 {
-    color: #27006e;
+
+.img-logo img{
+    max-width:100%;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    color: #090909;
+    padding: 0.7rem 1.7rem;
+    font-size: 16px;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff;
+}
+.botones:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.nav-inicio {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    gap: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.iconos-menu{
+    width: 2rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+}
+
+/* contenido */
+
+ h1{
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+main h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 2rem;
+}
+.texto-corto{
+    color: #000000;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-right: 0.5rem;
+}
+.texto-largo{
+    color: #000000;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;   
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .galeria {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    margin-left: 0.5rem;
 }
-      
+
 .visual {
-    background-color: #27006e;
-    gap: 1%;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
+    background-color: black;
 }
 
-/*main cpu*/
 
-.cpu {
+
+
+
+/* footer*/
+
+footer{
     display: flex;
-    flex-direction: row-reverse;
-    gap: 1%;
-    padding: 1rem;
-    background-color: #7a0000
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.cpu .galeria-cpu{
+
+
+/*CPU*/
+
+
+.nav-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botones-2 {
     display: flex;
-    flex-direction: column;
-    background-image:green ;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    color: #090909;
+    padding: 0.7rem 1.7rem;
+    font-size: 16px;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff;
+}
+.botones-2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.cpu .galeria-cpu .muestra {
-    display: block;
-    width: 240px;
-    height: 240px; 
-    background-color: rgb(116, 116, 116);
+.comparacion-cpu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-
-/*main gpu*/
-
-.gpu {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1%;
-    padding: 1rem;
-    background-color: #7a0000
-}
-
-.gpu .galeria-gpu{
-    display: flex;
-    flex-direction: column;
-    background-image:green ;
-    gap: 1rem;
-}
-
-.gpu .galeria-gpu .muestra {
-    display: block;
-    width: 240px;
-    height: 240px; 
-    background-color: rgb(116, 116, 116);
-}
-
-
-
-
-
-/*main ram*/
-
-
-.ram {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1%;
-    padding: 1rem;
-    background-color: #7a0000
-}
-
-.ram .galeria-ram{
-    display: flex;
-    flex-direction: column;
-    background-image:green ;
-    gap: 1rem;
-}
-
-.ram .galeria-ram .muestra {
-    display: block;
-    width: 240px;
-    height: 240px; 
-    background-color: rgb(116, 116, 116);
-}
-    /*main motherboard */
-
-
-.mother {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1%;
-    padding: 1rem;
-    background-color: #7a0000
-}
-
-.mother .galeria-mother{
-    display: flex;
-    flex-direction: column;
-    background-image:green ;
-    gap: 1rem;
-}
-
-.mother .galeria-mother .muestra {
-    display: block;
-    width: 240px;
-    height: 240px; 
-    background-color: rgb(116, 116, 116);
-}
-

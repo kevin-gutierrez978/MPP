@@ -1,52 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thePC</title>
-    <link rel="icon" href="/imagenes/iconos/">
-    <link rel="stylesheet" href="css/index.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>mi practica</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="principal">
-    <header class="navegacion">
-      <a href="index.html" ><img src="imagenes/iconos/caja.png" alt="logotipo computadora" class="logo"></a>   
-      <nav class="menu">
-         <ul>
-             <li class="boton"><a href="pages/cpu.html">CPU</a></li>
-             <li class="boton"><a href="pages/ram.html">RAM</a></li>
-             <li class="boton"><a href="pages/gpu.html">GPU</a></li>
-             <li class="boton"><a href="pages/storage.html">STORAGE</a></li>
-             <li class="boton"><a href="pages/motherboard.html">MOTHERBOARD</a></li>
-         </ul>
-      </nav>
-    </header>
-    <main class="contenido-principal">
-      <section class="texto-principal">
-         <h1 class="titulo">THE PERSONAL COMPUTER</h1>
-         <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, blanditiis reprehenderit animi iusto quidem maiores similique id adipisci accusamus rerum ea neque atque autem aliquid tempora beatae nemo nulla consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis culpa quis cumque omnis, hic rem nobis consectetur cupiditate deleniti earum obcaecati ea aliquam corrupti? Pariatur modi tenetur vel porro.</p>
-      </section>     
-      <section class="galeria">
-         <h2 class="titulo-2">ordenadores al paso del tiempo</h2> 
-         <ul>
-            <li><img src="imagenes/imagenes/pc1.png" alt="primer ordenador" class="visual">PC 1985</li>
-            <li><img src="imagenes/imagenes/pc2.png" alt="ordenador del 2000" class="visual">PC 2000</li>
-            <li><img src="imagenes/imagenes/pc3.png" alt="ordenador del 2010" class="visual">PC 2010</li>
-            <li><img src="imagenes/imagenes/pc4.png" alt="ordenador actual" class="visual">PC actual</li>
-            <li><video src="videos/editpc.mp4"controls class="visual"></video></li>
-         </ul>
-      </section>
-     </main>
-    <footer class="info"> 
-       <details>
-          <summary>Ver más información</summary>
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero et tenetur itaque doloremque sapiente blanditiis consequuntur dignissimos quam quaerat, dicta similique omnis veritatis cumque provident officia doloribus natus deserunt! Perspiciatis.</p>
-             <div class="links">
-                <a href="#">YouTube</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+<body>
+     <header>
+         <a href="" class="img-logo"><img src="img/caja.png" alt="LOGO"><a></a> 
+         <h1>THE PERSONAL COMPUTER</h1>    
+     </header>
+         <main>
+             <div class="layout">   
+                 <aside class="izquierda">
+                 <nav class="nav-inicio">
+                     <a href="pages/cpu.html"  class="botones"><img src="img/iconosmenu/logoCpu.png" alt="ico-cpu" class="iconos-menu">cpu</a>
+                     <a href="pages/gpu.html" class="botones"><img src="img/iconosmenu/logogpu.png" alt="ico-gpu" class="iconos-menu">gpu</a>
+                     <a href="" class="botones"><img src="img/iconosmenu/logoRam.png" alt="ico-ram" class="iconos-menu">ram</a>
+                     <a href="mobo" class="botones"><img src="img/iconosmenu/logoMobo.png" alt="ico-mobo" class="iconos-menu">mobo
+                    </a>
+                     <a href="hdd" class="botones"><img src="img/iconosmenu/logoHdd.png" alt="ico-hdd" class="iconos-menu">hdd</a>
+                 </nav>
+                 <div class="galeria">
+                     <img src="img/img/img1.png" alt="img-pc-antiguo"  class="visual">
+                     <img src="img/img/img2.png" alt="img-pc" class="visual">
+                     <img src="img/img/img3.png" alt="img-pc" class="visual">
+                     <img src="img/img/img4.png" alt="img.pc" class="visual">
+                     <img src="img/img/img5.jpg" alt="img.pc" class="visual">
+                     <img src="img/img/img6.png" alt="img.pc" class="visual">
+                     <img src="img/img/img7.jpg" alt="img.pc" class="visual">
+                </div>
+                 </aside>  
+                 <section class="derecha">  
+                     <section class="texto-corto">
+                         <p>Una computadora personal "PC" u "Ordenador" es una máquina electrónica capaz de recibir, procesar y almacenar información.   Hoy en día es una herramienta fundamental en casi todos los aspectos de la vida: estudio, trabajo, entretenimiento y  comunicación.</p>
+                         <h2>¿Cómo funciona un ordenador?</h2>
+                         <p>De forma simple, un ordenador sigue este proceso:</p>
+                         <ul class="listas">
+                             <li>Entrada (Input): recibe datos (teclado, mouse, micrófono).</li>
+                             <li> Procesamiento: interpreta esos datos mediante programas.</li>
+                             <li>Salida (Output): muestra resultados (pantalla, sonido impresora).</li>
+                             <li>Almacenamiento: guarda información para usarla después.</li>
+                         </ul>
+                 </section>
+             </section>
              </div>
-       </details>
+             <section class="texto-largo">              
+                 <h2>Hardware (lo físico)</h2>
+                 <p>Son las partes que puedes tocar:</p>
+                 <ul class="listas">
+                     <li>CPU (procesador): el “cerebro” del ordenador</li>
+                     <li>Memoria RAM: guarda datos temporales para trabajar rápido</li>
+                     <li>Disco duro / SSD: almacena información permanente</li>
+                     <li>Placa base: conecta todos los componentes</li>
+                     <li>Periféricos: teclado, mouse, monitor, etc.</li>
+                 </ul>
+             <h2>Software (lo lógico)</h2>
+             <p>Son los programas que hacen funcionar el equipo:</p>
+             <ul>
+                 <li>Sistema operativo: (como Windows o Linux) controla todo</li>
+                 <li>Aplicaciones: navegador, juegos, editores de texto, etc.</li>
+             </ul>
+             <h2>¿Qué es importante saber?</h2>
+             <ul class="listas">
+                 <li>✔️ Más RAM = mejor rendimiento multitarea </li>
+                 <li>✔️ Un SSD es más rápido que un disco duro tradicional</li>
+                 <li>✔️ El procesador influye en la velocidad general</li>
+                 <li>✔️ El software debe estar actualizado y optimizado</li>
+             </ul>
+             <h2>¿Por qué son tan importantes?</h2>
+             <p>Los ordenadores son una herramienta clave en muchos ámbitos:</p>
+             <ul class="listas">
+                 <li>📚 Educación: investigación, clases virtuales.</li>
+                 <li>💼 Trabajo: programación, diseño, administración.</li>
+                 <li>🎮 Entretenimiento: videojuegos, películas, música.</li>
+                 <li>🌐 Comunicación: redes sociales, videollamadas.</li>                     <li>🔬 Ciencia y tecnología: simulaciones, inteligencia artificial.<li>
+             </ul>
+             <p>Entender cómo funcionan y cuáles son sus componentes te permite aprovecharlos mejor, resolver problemas y adaptarte al mundo digital.</p>
+             </section>   
+         </main>
+    <footer>
+        <details>
+            <summary>Ver más información</summary>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ea sunt voluptates culpa omnis rem ullam nihil deleniti error illo totam non cum cupiditate et perferendis asperiores sequi, reprehenderit hic?</p>
+        </details>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

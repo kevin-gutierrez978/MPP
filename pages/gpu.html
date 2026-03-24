@@ -3,46 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPU</title>
-    <link rel=".icon" href="../imagenes/iconos/gpu.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
+    <title>CPU</title>
 </head>
 <body>
-     <header class="navegacion">    
-         <a href="../index.html"><img src="../imagenes/iconos/caja.png" alt="logotipo computadora" class="logo"></a>
-         <nav class="menu">
-             <ul>
-                 <li><a href="../pages/cpu.html">CPU</a></li>
-                 <li><a href="../pages/ram.html">RAM</a></li>
-                 <li><a href="../pages/storage.html">STORAGE</a></li>
-                 <li><a href="../pages/motherboard.html">MOTHERBOARD</a></li>
-                 
-             </ul>
-         </nav>
+     <header>             
+         <div class="container-fluid">
+             <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                  ☰
+             </button>
+              <!-- MENÚ OFFCANVAS -->
+             <div class="offcanvas offcanvas-start" id="menu">
+             <div class="offcanvas-header">
+                 <h5>Menú</h5>
+                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+             </div>
+             <div class="offcanvas-body">
+                 <a href="../index.html" class="d-block">Inicio</a>
+                 <a href="#sobre" class="d-block">Sobre</a>
+                 <a href="#contacto" class="d-block">Contacto</a>
+            </div>
+         </div>
+         <img src="../img/iconosmenu/logogpu.png" alt="logo-cpu">
+         <h1>CENTRAL PROCESSING UNIT (CPU)</h1>
      </header>
-     <main class="gpu">
-         <section class="texto-gpu">
-             <h1>GPU</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita aspernatur et id voluptatum ipsum pariatur nisi, impedit iusto! Dolorem aperiam temporibus optio voluptates numquam, dolor officiis quis praesentium est? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit rem blanditiis minus ut veritatis beatae alias nesciunt facilis, aperiam, sit magni nisi voluptas corrupti nulla accusantium suscipit illo quidem. Architecto?</p>
-         </section>
-         <section class="galeria-gpu">
-             <img src="../imagenes/imagenes/gpu.png" alt="img gpu" class="muestra">
-             <img src="" alt="img gpu back" class="muestra">
-         </section>
-     </main> 
-    <footer class="info"> 
-        <details>
-          <summary>Ver más información</summary>
-          <p class="parrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero et tenetur itaque doloremque sapiente blanditiis consequuntur dignissimos quam quaerat, dicta similique omnis veritatis cumque provident officia doloribus natus deserunt! Perspiciatis.</p>
-         
-         <p>
-            <a href="#">YouTube</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-         </p>
-         </details>
-    </footer>
-</body>
+
+     <main>
+         <p>Las GPU (Unidades de Procesamiento Gráfico) son componentes esenciales en las computadoras modernas, especialmente para tareas que requieren un alto rendimiento visual como los videojuegos, el diseño gráfico, la animación 3D y la inteligencia artificial. A diferencia de los procesadores tradicionales (CPU), las GPU están diseñadas para realizar muchos cálculos en paralelo, lo que las hace ideales para procesar grandes volúmenes de datos de forma simultánea.
+
+         En el mercado de las GPU, dos de las compañías más destacadas son NVIDIA y AMD. Ambas empresas compiten constantemente por ofrecer tarjetas gráficas más potentes, eficientes y con tecnologías innovadoras.
+
+         Por un lado, NVIDIA es conocida por su liderazgo en tecnologías avanzadas como el trazado de rayos (ray tracing) y la inteligencia artificial aplicada a gráficos, como su tecnología DLSS. Sus tarjetas gráficas suelen destacarse por su alto rendimiento en juegos y aplicaciones profesionales, además de contar con un ecosistema de software muy sólido.
+
+         Por otro lado, AMD ofrece alternativas muy competitivas, destacándose por brindar un excelente rendimiento a un precio más accesible. Sus GPU de la línea Radeon han mejorado notablemente en los últimos años, incorporando también soporte para ray tracing, optimizaciones para gaming y creación de contenido.</p>
+         <aside>
+             <nav class="nav-2">
+             <a href="cpu.html"  class="botones"><img src="../img/iconosmenu/logoCpu.png" alt="ico-cpu" class="iconos-menu">cpu</a>
+             <a href="" class="botones-2"><img src="../img/iconosmenu/logoRam.png" alt="ico-ram" class="iconos-menu">ram</a>
+             <a href="mobo" class="botones-2"><img src="../img/iconosmenu/logoMobo.png" alt="ico-mobo" class="iconos-menu">mobo</a>                 
+             <a href="hdd" class="botones-2"><img src="../img/iconosmenu/logoHdd.png" alt="ico-hdd" class="iconos-menu">hdd</a>
+             </nav>            
+         </aside>
+         <div class="comparacion-cpu">
+             <div>
+                 <h2>NVIDIA</h2>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+             </div>
+             <div>
+                 <h2>AMD</h2>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+                 <p>modelo</p>
+             </div>
+         </div>
+     </main>
+     <footer></footer> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
