@@ -9,12 +9,12 @@
 </head>
 <body>
      <header class="cabeza-comp">             
-         <div class="container-fluid">
+         <div class="container-fluid d-flex justify-content-end mt-3">
              <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
                   ☰
              </button>
               <!-- MENÚ OFFCANVAS -->
-             <div class="offcanvas offcanvas-start" id="menu">
+             <div class="offcanvas offcanvas-end" id="menu">
                  <div class="offcanvas-header">
                      <h5>The Personal Computer</h5>
                      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -40,6 +40,7 @@
 
          Por otro lado, AMD ofrece alternativas muy competitivas, destacándose por brindar un excelente rendimiento a un precio más accesible. Sus GPU de la línea Radeon han mejorado notablemente en los últimos años, incorporando también soporte para ray tracing, optimizaciones para gaming y creación de contenido.</p>
          <aside>
+             <!-- segunda barra de navegación sin un boton-->
              <nav class="nav-2">
              <a href="cpu.html"  class="botones"><img src="../img/iconosmenu/logoCpu.png" alt="ico-cpu" class="iconos-menu">cpu</a>
              <a href="" class="botones-2"><img src="../img/iconosmenu/logoRam.png" alt="ico-ram" class="iconos-menu">ram</a>
@@ -68,7 +69,15 @@
              </div>
          </div>
      </main>
-     <footer></footer> 
+     <footer>
+         <details>  
+             <summary>Ver más información</summary>
+                 <div class="pies">
+                     <a href="" class="img-logo"><img src="../img/caja.png" alt="LOGO"><a></a>
+                     <p>© 2026 The Personal Computer.</p>
+                 </div>
+             </details>
+     </footer> 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -125,13 +125,21 @@ main h2{
 
 
 /* footer*/
-
-footer{
+footer {
     display: flex;
-    background-color: #ffffff;
+    background-color: #888888;
+    justify-content: center; 
+}
+footer summary{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    
+    color: rgb(196, 202, 168);
+    font-size: 1rem;
+}
+.pies{
+    display: flex;
+    background-color: #888888;
+    justify-content: center; 
 }
 
 /*tablet*/
