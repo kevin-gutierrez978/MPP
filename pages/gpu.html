@@ -8,29 +8,31 @@
     <title>CPU</title>
 </head>
 <body>
-     <header>             
+     <header class="cabeza-comp">             
          <div class="container-fluid">
              <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
                   ☰
              </button>
               <!-- MENÚ OFFCANVAS -->
              <div class="offcanvas offcanvas-start" id="menu">
-             <div class="offcanvas-header">
-                 <h5>Menú</h5>
-                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                 <div class="offcanvas-header">
+                     <h5>The Personal Computer</h5>
+                     <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                 </div>
+                 <div class="offcanvas-body">
+                     <a href="../index.html" class="d-block">Inicio</a>
+                     <a href="#sobre" class="d-block">Sobre</a>
+                     <a href="#contacto" class="d-block">Contacto</a>
+                 </div>
              </div>
-             <div class="offcanvas-body">
-                 <a href="../index.html" class="d-block">Inicio</a>
-                 <a href="#sobre" class="d-block">Sobre</a>
-                 <a href="#contacto" class="d-block">Contacto</a>
-            </div>
-         </div>
-         <img src="../img/iconosmenu/logogpu.png" alt="logo-cpu">
-         <h1>CENTRAL PROCESSING UNIT (CPU)</h1>
+          </div>
      </header>
-
-     <main>
-         <p>Las GPU (Unidades de Procesamiento Gráfico) son componentes esenciales en las computadoras modernas, especialmente para tareas que requieren un alto rendimiento visual como los videojuegos, el diseño gráfico, la animación 3D y la inteligencia artificial. A diferencia de los procesadores tradicionales (CPU), las GPU están diseñadas para realizar muchos cálculos en paralelo, lo que las hace ideales para procesar grandes volúmenes de datos de forma simultánea.
+     <main> 
+         <div class="visual-componente">  
+             <img src="../img/iconosmenu/logogpu.png" alt="logo-gpu" class="ico-componente">
+             <h1>Graphics Processing Units (GPU)</h1>
+         </div>
+         <p class="texto-largo">Las GPU (Unidades de Procesamiento Gráfico) son componentes esenciales en las computadoras modernas, especialmente para tareas que requieren un alto rendimiento visual como los videojuegos, el diseño gráfico, la animación 3D y la inteligencia artificial. A diferencia de los procesadores tradicionales (CPU), las GPU están diseñadas para realizar muchos cálculos en paralelo, lo que las hace ideales para procesar grandes volúmenes de datos de forma simultánea.
 
          En el mercado de las GPU, dos de las compañías más destacadas son NVIDIA y AMD. Ambas empresas compiten constantemente por ofrecer tarjetas gráficas más potentes, eficientes y con tecnologías innovadoras.
 

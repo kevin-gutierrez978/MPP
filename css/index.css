@@ -20,7 +20,7 @@ body{
 
 /*navegación*/
 
-header { 
+.cabeza { 
     display: flex;
     gap: 1rem;
     margin-top: 0.5rem;
@@ -29,8 +29,8 @@ header {
 
 .img-logo{
     display: block;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     margin-left: 1rem;
     margin-top: 1rem;
 }
@@ -63,9 +63,9 @@ header {
     display: flex;
     flex-direction: column;
     width: 90px;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-left: 0.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 .iconos-menu{
@@ -92,13 +92,13 @@ main h2{
 }
 .texto-corto{
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-style: italic;
     padding-right: 0.5rem;
 }
 .texto-largo{
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-style: italic;
     padding-right: 0.5rem;
     padding-left: 0.5rem;   
@@ -124,9 +124,6 @@ main h2{
 }
 
 
-
-
-
 /* footer*/
 
 footer{
@@ -137,16 +134,96 @@ footer{
     
 }
 
+/*tablet*/
+
+@media (min-width: 768px){
+.layout{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .cabeza h1{
+    flex-wrap: wrap;
+    margin-left: 2rem;
+ }
+ .cabeza {
+        margin-bottom: 2rem;
+ }
+ .nav-inicio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+ }
+ .galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .visual{
+     width: 140px;
+     height: 140px;
+ }
+ h1{
+     font-size: 3rem;
+ }
+ .texto-corto{
+     font-size: 2rem;
+ }
+ .texto-largo{
+    font-size: 2rem;
+ }
+}
+
+@media (min-width: 1024px) {
+ .botones{   
+     padding: 1.4rem 3.4rem;
+     font-size: 2rem;
+     }
+ .iconos-menu{
+     width: 3rem;
+     height: 2.5rem;
+     margin-right: 0.5rem;
+     }
+ .visual{
+     width: 180px;
+     height: 180px;
+     }    
+ .texto{
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ }     
+}
 
 
-/*CPU*/
+/*CPU* gpu*/
+
+.visual-componente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.ico-componente{
+    width: 200px;
+    height: 170px;
+}
 .nav-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2px;
 }
 
+.texto-cpu{
+    margin-left:0.5rem ;
+    margin-right:0.5rem ;
+    font-size: 1.5rem ;
+
+}
 .botones-2 {
     display: flex;
     flex-direction: row;
@@ -154,8 +231,8 @@ footer{
     align-items: center;
     justify-content: center;
     color: #090909;
-    padding: 0.7rem 1.7rem;
-    font-size: 16px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     border-radius: 1rem;
     background: #e8e8e8;
     cursor: pointer;
@@ -167,6 +244,8 @@ footer{
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
+
+
 
 .comparacion-cpu {
   display: grid;
