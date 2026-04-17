@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+
+//mobile first
+@mixin tablet {
+  @media (min-width: #{$bp-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$bp-desktop}) {
+    @content;
+  }
+}
+
+// Flex centrado
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex entre elementos
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// sutil
+@mixin glass {
+  background: rgba($color-card, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid $color-border;
+}
+
+// Sombra con acento
+@mixin glow($color: $color-accent) {
+  box-shadow: 0 0 20px rgba($color, 0.2), 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+// Texto recortado 
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

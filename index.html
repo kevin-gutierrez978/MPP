@@ -1,115 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>mi practica</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>ThePersonalComputer — Conocé los componentes de tu PC</title>
+  <meta name="description" content="Aprende de forma simple qué hace cada componente de una computadora: CPU, GPU, RAM, placa madre y almacenamiento." />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos propios (SASS compilado) -->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-     <header class="cabeza">            
-         <div>
-             <button class="btn btn-primary position-fixed top-0 end-0 m-3" data-bs-toggle="offcanvas" data-bs-target="#menu">
-                  ☰
-             </button>
-              <!-- MENÚ OFFCANVAS -->
-             <div class="offcanvas offcanvas-end" id="menu">
-                 <div class="offcanvas-header">
-                     <h5>The Personal Computer</h5>
-                     <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-                 </div>
-                 <div class="offcanvas-body">
-                     <a href="index.html" class="d-block">Inicio</a>
-                     <a href="#sobre" class="d-block">Sobre</a>
-                     <a href="#contacto" class="d-block">Contacto</a>
-                 </div>
-             </div>
-          </div>
-        <div>
-         <a href="" class="img-logo"><img src="img/caja.png" alt="LOGO"><a></a>
-        </div>
-         <h1>THE PERSONAL COMPUTER</h1>    
-     </header>
-         <main>
-             <div class="layout"> <!-- diseno de navegación con texto al lado-->   
-                 <aside class="izquierda">
-                 <nav class="nav-inicio">
-                     <a href="pages/cpu.html"  class="botones"><img src="img/iconosmenu/logoCpu.png" alt="ico-cpu" class="iconos-menu">cpu</a>
-                     <a href="pages/gpu.html" class="botones"><img src="img/iconosmenu/logogpu.png" alt="ico-gpu" class="iconos-menu">gpu</a>
-                     <a href="" class="botones"><img src="img/iconosmenu/logoRam.png" alt="ico-ram" class="iconos-menu">ram</a>
-                     <a href="mobo" class="botones"><img src="img/iconosmenu/logoMobo.png" alt="ico-mobo" class="iconos-menu">mobo
-                    </a>
-                     <a href="hdd" class="botones"><img src="img/iconosmenu/logoHdd.png" alt="ico-hdd" class="iconos-menu">hdd</a>
-                 </nav>
-                 <div class="galeria">
-                     <img src="img/img/img1.png" alt="img-pc-antiguo"  class="visual">
-                     <img src="img/img/img2.png" alt="img-pc" class="visual">
-                     <img src="img/img/img3.png" alt="img-pc" class="visual">
-                     <img src="img/img/img4.png" alt="img.pc" class="visual">
-                     <img src="img/img/img5.jpg" alt="img.pc" class="visual">
-                     <img src="img/img/img6.png" alt="img.pc" class="visual">
-                     <img src="img/img/img7.jpg" alt="img.pc" class="visual">
-                     <img src="img/img/img8.jpg" alt="img.pc" class="visual">
-                </div>
-                 </aside>  
-                 <section class="derecha">  
-                     <section class="texto-corto texto">
-                         <p>Una computadora personal "PC" u "Ordenador" es una máquina electrónica capaz de recibir, procesar y almacenar información.   Hoy en día es una herramienta fundamental en casi todos los aspectos de la vida: estudio, trabajo, entretenimiento y  comunicación.</p>
-                         <h2>¿Cómo funciona un ordenador?</h2>
-                         <p>De forma simple, un ordenador sigue este proceso:</p>
-                         <ul class="listas">
-                             <li>Entrada (Input): recibe datos (teclado, mouse, micrófono).</li>
-                             <li> Procesamiento: interpreta esos datos mediante programas.</li>
-                             <li>Salida (Output): muestra resultados (pantalla, sonido impresora).</li>
-                             <li>Almacenamiento: guarda información para usarla después.</li>
-                         </ul>
-                 </section>
-             </section>
-             </div>
-             <section class="texto-largo texto">              
-                 <h2>Hardware (lo físico)</h2>
-                 <p>Son las partes que puedes tocar:</p>
-                 <ul class="listas">
-                     <li>CPU (procesador): el “cerebro” del ordenador</li>
-                     <li>Memoria RAM: guarda datos temporales para trabajar rápido</li>
-                     <li>Disco duro / SSD: almacena información permanente</li>
-                     <li>Placa base: conecta todos los componentes</li>
-                     <li>Periféricos: teclado, mouse, monitor, etc.</li>
-                 </ul>
-             <h2>Software (lo lógico)</h2>
-             <p>Son los programas que hacen funcionar el equipo:</p>
-             <ul>
-                 <li>Sistema operativo: (como Windows o Linux) controla todo</li>
-                 <li>Aplicaciones: navegador, juegos, editores de texto, etc.</li>
-             </ul>
-             <h2>¿Qué es importante saber?</h2>
-             <ul class="listas">
-                 <li>✔️ Más RAM = mejor rendimiento multitarea </li>
-                 <li>✔️ Un SSD es más rápido que un disco duro tradicional</li>
-                 <li>✔️ El procesador influye en la velocidad general</li>
-                 <li>✔️ El software debe estar actualizado y optimizado</li>
-             </ul>
-             <h2>¿Por qué son tan importantes?</h2>
-             <p>Los ordenadores son una herramienta clave en muchos ámbitos:</p>
-             <ul class="listas">
-                 <li>📚 Educación: investigación, clases virtuales.</li>
-                 <li>💼 Trabajo: programación, diseño, administración.</li>
-                 <li>🎮 Entretenimiento: videojuegos, películas, música.</li>
-                 <li>🌐 Comunicación: redes sociales, videollamadas.</li>                     <li>🔬 Ciencia y tecnología: simulaciones, inteligencia artificial.<li>
-             </ul>
-             <p>Entender cómo funcionan y cuáles son sus componentes te permite aprovecharlos mejor, resolver problemas y adaptarte al mundo digital.</p>
-             </section>   
-         </main>
-         <footer>
-             <details>
-                 <summary>Ver más información</summary>
-                 <div class="pies">
-                     <a href="" class="img-logo"><img src="img/caja.png" alt="LOGO"><a></a>
-                     <p>© 2026 The Personal Computer.</p>
-                 </div>
-             </details>
-         </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- NAVBAR Bootstrap-->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navegación principal">
+    <div class="container-fluid px-3 px-lg-5">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html" title="Ir al inicio">
+        The Personal<span>Computer</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links de navegación -->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="pages/cpu.html">Procesador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/gpu.html">GPU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/ram.html">RAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/mobo.html">Placa Madre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page/storage.html">Almacenamiento</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- fin navbar -->
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__tag">Guía de hardware</p>
+      <h1 class="hero__title" id="hero-title">
+        Entendé tu <span>computadora</span>
+      </h1>
+      <p class="hero__subtitle">
+        Cinco componentes esenciales explicados de forma simple. Sin tecnicismos, sin vueltas.
+        Justo lo que necesitás saber.
+      </p>
+      <!-- Botón anchor hacia las cards -->
+      <a href="#componentes" class="btn-back">Explorar componentes ↓</a>
+    </section>
+    <!-- fin hero -->
+
+    <!-- SECCIÓN DE CARDS -->
+    <section class="components-section" id="componentes" aria-labelledby="section-title">
+      <h2 class="section-title" id="section-title">Componentes</h2>
+
+      <!-- Grid de cards -->
+      <div class="components-grid">
+
+        <!-- Card CPU -->
+        <article>
+          <a class="component-card" href="pages/cpu.html" title="Aprender sobre el procesador">
+            <span class="component-card__icon" aria-hidden="true"></span>
+            <p class="component-card__name">CPU</p>
+            <h3 class="component-card__title">Procesador</h3>
+            <p class="component-card__desc">
+              El cerebro de la computadora. Ejecuta instrucciones y toma decisiones millones de veces por segundo.
+            </p>
+            <span class="component-card__arrow">Ver más →</span>
+          </a>
+        </article>
+
+        <!-- Card GPU -->
+        <article>
+          <a class="component-card" href="pages/gpu.html" title="Aprender sobre la tarjeta de video">
+            <span class="component-card__icon" aria-hidden="true"></span>
+            <p class="component-card__name">GPU</p>
+            <h3 class="component-card__title">Tarjeta de Video</h3>
+            <p class="component-card__desc">
+              Se encarga de procesar y mostrar imágenes en pantalla. Clave para juegos, diseño y edición de video.
+            </p>
+            <span class="component-card__arrow">Ver más →</span>
+          </a>
+        </article>
+
+        <!-- Card RAM -->
+        <article>
+          <a class="component-card" href="pages/ram.html" title="Aprender sobre la memoria RAM">
+            <span class="component-card__icon" aria-hidden="true"></span>
+            <p class="component-card__name">RAM</p>
+            <h3 class="component-card__title">Memoria RAM</h3>
+            <p class="component-card__desc">
+              Almacena temporalmente lo que la computadora está usando en este momento para acceder a ello rápido.
+            </p>
+            <span class="component-card__arrow">Ver más →</span>
+          </a>
+        </article>
+
+        <!-- Card MOBO -->
+        <article>
+          <a class="component-card" href="pages/mobo.html" title="Aprender sobre la placa madre">
+            <span class="component-card__icon" aria-hidden="true"></span>
+            <p class="component-card__name">MOBO</p>
+            <h3 class="component-card__title">Placa Madre</h3>
+            <p class="component-card__desc">
+              Conecta y comunica todos los componentes entre sí. Es la columna vertebral de la PC.
+            </p>
+            <span class="component-card__arrow">Ver más →</span>
+          </a>
+        </article>
+
+        <!-- Card Storage -->
+        <article>
+          <a class="component-card" href="pages/storage.html" title="Aprender sobre el almacenamiento">
+            <span class="component-card__icon" aria-hidden="true"></span>
+            <p class="component-card__name">Storage</p>
+            <h3 class="component-card__title">Almacenamiento</h3>
+            <p class="component-card__desc">
+              Donde viven tus archivos, el sistema operativo y los programas. Puede ser HDD o SSD.
+            </p>
+            <span class="component-card__arrow">Ver más →</span>
+          </a>
+        </article>
+
+      </div>
+      <!-- fin grid -->
+
+    </section>
+    <!-- fin sección componentes -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 <span>ThePersonalComputer</span> — Proyecto educativo de desarrollo web</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

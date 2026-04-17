@@ -1,85 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>CPU</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <title>Procesador (CPU) — ThePersonalComputer</title>
+  <meta name="description" content="¿Qué es un procesador y para qué sirve? Conocé cómo funciona la CPU de tu computadora de forma simple y clara." />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Estilos propios (SASS compilado) -->
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
-     <header class="cabeza-comp">             
-         <div class="container-fluid d-flex justify-content-end mt-3">
-             <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
-                  ☰
-             </button>
-              <!-- MENÚ OFFCANVAS -->
-             <div class="offcanvas offcanvas-end" id="menu">
-                 <div class="offcanvas-header">
-                     <h5>The Personal Computer</h5>
-                     <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-                 </div>
-                 <div class="offcanvas-body">
-                     <a href="../index.html" class="d-block">Inicio</a>
-                     <a href="#sobre" class="d-block">Sobre</a>
-                     <a href="#contacto" class="d-block">Contacto</a>
-                 </div>
-             </div>
+
+  <!-- NAVBAR Bootstrap con hamburguesa -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navegación principal">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand" href="../index.html" title="Ir al inicio">The Personal<span>Com.</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="cpu.html">Procesador</a></li>
+          <li class="nav-item"><a class="nav-link" href="gpu.html">GPU</a></li>
+          <li class="nav-item"><a class="nav-link" href="ram.html">RAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="mobo.html">Placa Madre</a></li>
+          <li class="nav-item"><a class="nav-link" href="storage.html">Almacenamiento</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO del componente -->
+    <header class="component-hero" aria-labelledby="page-title">
+      <span class="component-hero__icon" aria-hidden="true"></span>
+      <p class="component-hero__tag">Componente 01</p>
+      <h1 class="component-hero__title" id="page-title">Procesador</h1>
+      <p class="component-hero__subtitle">El cerebro de toda computadora. Sin él, nada funciona.</p>
+    </header>
+
+    <!-- CONTENIDO -->
+    <section class="content-section" aria-label="Información sobre el procesador">
+
+      <!-- Botón volver -->
+      <a href="../index.html" class="btn-back" title="Volver al inicio">← Volver</a>
+
+      <!-- Bloque: Qué es -->
+      <div class="content-block">
+        <h2>¿Qué es?</h2>
+        <p>
+          El procesador, también llamado CPU (Central Processing Unit), es el componente principal de cualquier computadora.
+          Se encarga de ejecutar instrucciones: leer datos, hacer cálculos y decidir qué hace el sistema en cada momento.
+          Todo programa que abrís pasa por la CPU.
+        </p>
+      </div>
+
+      <!-- Bloque: Para qué sirve -->
+      <div class="content-block">
+        <h2>¿Para qué sirve?</h2>
+        <p>
+          La CPU controla absolutamente todo lo que hace la computadora. Cuando abrís un navegador, escuchás música
+          o guardás un archivo, es el procesador quien coordina cada una de esas acciones. Cuanto más potente es,
+          más rápido y fluido responde el sistema.
+        </p>
+      </div>
+
+      <!-- Bloque: Datos clave -->
+      <div class="content-block">
+        <h2>Datos clave</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <p class="spec-label">Fabricantes principales</p>
+            <p class="spec-value">Intel y AMD</p>
           </div>
-     </header>
-     <main> 
-          <!-- icono de componente junto al titulo -->
-         <div class="visual-componente">  
-             <img src="../img/iconosmenu/logoCpu.png" alt="logo-cpu" class="ico-componente">
-             <h1>CENTRAL PROCESSING UNIT (CPU)</h1>
-         </div>
-         <p class="texto-cpu">Los procesadores son el “cerebro” de una computadora, encargados de ejecutar instrucciones, realizar cálculos y coordinar el funcionamiento de todos los componentes del sistema. Su rendimiento influye directamente en la velocidad con la que se abren programas, se ejecutan videojuegos o se realizan tareas complejas como la edición de video o el desarrollo de software.
+          <div class="spec-item">
+            <p class="spec-label">Unidad de medida</p>
+            <p class="spec-value">GHz (gigahertz)</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-label">Concepto clave</p>
+            <p class="spec-value">Núcleos e hilos</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-label">¿Dónde va?</p>
+            <p class="spec-value">Socket de la placa madre</p>
+          </div>
+        </div>
+      </div>
 
-         En el mercado actual, dos de las compañías más importantes en la fabricación de procesadores son Intel y AMD. Ambas empresas compiten constantemente por ofrecer mejores tecnologías, mayor eficiencia energética y mayor potencia de procesamiento.
+      <!-- Bloque: Curiosidad -->
+      <div class="content-block">
+        <h2>¿Sabías que...?</h2>
+        <p>
+          Los procesadores modernos tienen varios núcleos, lo que significa que pueden hacer varias cosas al mismo tiempo.
+          Un procesador de 8 núcleos puede manejar 8 tareas simultáneamente, por eso los programas de hoy están diseñados
+          para aprovechar esa capacidad.
+        </p>
+      </div>
 
-         Por un lado, Intel ha sido históricamente líder en el sector, destacándose por su estabilidad y fuerte presencia en computadoras de escritorio y laptops. Sus procesadores suelen ofrecer un alto rendimiento por núcleo, lo que los hace muy eficientes en tareas que dependen de la velocidad individual de cada núcleo.
+    </section>
+    <!-- fin content -->
 
-         Por otro lado, AMD ha ganado gran popularidad en los últimos años gracias a su arquitectura innovadora y su excelente relación calidad-precio. Sus procesadores, especialmente la línea Ryzen, se destacan por ofrecer más núcleos e hilos a precios competitivos, lo que los convierte en una opción ideal para multitarea y aplicaciones exigentes.</p>
-         <!-- segunda barra de navegación sin un boton-->
-         <aside>
-             <nav class="nav-2">
-             <a href="gpu.html" class="botones-2"><img src="../img/iconosmenu/logogpu.png" alt="ico-gpu" class="iconos-menu">gpu</a>
-             <a href="" class="botones-2"><img src="../img/iconosmenu/logoRam.png" alt="ico-ram" class="iconos-menu">ram</a>
-             <a href="mobo" class="botones-2"><img src="../img/iconosmenu/logoMobo.png" alt="ico-mobo" class="iconos-menu">mobo</a>                 
-             <a href="hdd" class="botones-2"><img src="../img/iconosmenu/logoHdd.png" alt="ico-hdd" class="iconos-menu">hdd</a>
-             </nav>            
-         </aside>
-         <!-- una tabla comparativa de gpus-->
-         <div class="comparacion-cpu">
-             <div>
-                 <h2>INTEL</h2>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-             </div>
-             <div>
-                 <h2>AMD</h2>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-                 <p>modelo</p>
-             </div>
-         </div>
-     </main>
-     <footer>
-         <details>  
-             <summary>Ver más información</summary>
-                 <div class="pies">
-                     <a href="" class="img-logo"><img src="../img/caja.png" alt="LOGO"><a></a>
-                     <p>© 2026 The Personal Computer.</p>
-                 </div>
-             </details>
-     </footer> 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 <span>The personal computer</span> — Proyecto educativo de desarrollo web</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

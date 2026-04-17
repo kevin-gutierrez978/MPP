@@ -1,0 +1,360 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+// Componentes reutilizables
+
+// --- Navbar personalizada sobre Bootstrap ---
+
+
+.navbar-custom {
+  background: rgba($color-bg, 0.95) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+  padding: $spacing-xs $spacing-sm;
+
+  .navbar-brand {
+    font-family: $font-display;
+    font-size: 1.1rem;
+    color: $color-accent !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    span {
+      color: $color-text;
+    }
+  }
+
+  .nav-link {
+    color: $color-muted !important;
+    font-family: $font-body;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+    padding: $spacing-xs $spacing-sm !important;
+
+    &:hover,
+    &.active {
+      color: $color-accent !important;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $color-border;
+
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+  }
+
+  @include tablet {
+    padding: $spacing-xs $spacing-lg;
+  }
+}
+
+// --- Hero section ---
+.hero {
+  min-height: 100vh;
+  background: 
+    radial-gradient(ellipse at 20% 50%, rgba($color-accent2, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba($color-accent, 0.1) 0%, transparent 50%),
+    $color-bg;
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: $spacing-xl $spacing-sm;
+
+  .hero__tag {
+    font-family: $font-display;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-accent;
+    border: 1px solid rgba($color-accent, 0.3);
+    padding: $spacing-xs $spacing-md;
+    border-radius: 50px;
+    margin-bottom: $spacing-md;
+  }
+
+  .hero__title {
+    font-family: $font-display;
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 900;
+    color: $color-white;
+    line-height: 1.1;
+    margin-bottom: $spacing-md;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  .hero__subtitle {
+    font-family: $font-body;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: $color-muted;
+    max-width: 550px;
+    margin: 0 auto $spacing-lg;
+    line-height: 1.7;
+  }
+}
+
+// --- Cards de componentes ---
+.components-section {
+  padding: $spacing-xl $spacing-sm;
+  background: $color-bg;
+
+  .section-title {
+    font-family: $font-display;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: $color-white;
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    letter-spacing: 2px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: $color-accent;
+      margin: $spacing-sm auto 0;
+    }
+  }
+
+  .components-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.component-card {
+  @include glass;
+  border-radius: $radius-lg;
+  padding: $spacing-lg $spacing-md;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, $color-accent, $color-accent2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    @include glow;
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+    }
+
+    .component-card__icon {
+      transform: scale(1.1);
+    }
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &__name {
+    font-family: $font-display;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__title {
+    font-family: $font-body;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $color-white;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    color: $color-muted;
+    line-height: 1.6;
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-top: $spacing-sm;
+    color: $color-accent;
+    font-size: 0.85rem;
+    font-family: $font-body;
+    letter-spacing: 1px;
+  }
+}
+
+// --- Página interna de componente ---
+.component-hero {
+  min-height: 45vh;
+  background: 
+    radial-gradient(ellipse at 30% 50%, rgba($color-accent2, 0.2) 0%, transparent 60%),
+    $color-bg;
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem $spacing-sm $spacing-xl;
+
+  .component-hero__icon {
+    font-size: 4rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  .component-hero__tag {
+    font-family: $font-display;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: $spacing-sm;
+  }
+
+  .component-hero__title {
+    font-family: $font-display;
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    font-weight: 900;
+    color: $color-white;
+    margin-bottom: $spacing-sm;
+  }
+
+  .component-hero__subtitle {
+    font-family: $font-body;
+    font-size: 1rem;
+    color: $color-muted;
+    max-width: 500px;
+  }
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $spacing-xl $spacing-sm;
+
+  .content-block {
+    @include glass;
+    border-radius: $radius-md;
+    padding: $spacing-lg;
+    margin-bottom: $spacing-md;
+
+    h2 {
+      font-family: $font-display;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $color-accent;
+      margin-bottom: $spacing-sm;
+    }
+
+    p {
+      font-family: $font-body;
+      color: $color-muted;
+      line-height: 1.8;
+      margin: 0;
+    }
+  }
+
+  .specs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spec-item {
+      background: rgba($color-bg, 0.6);
+      border-radius: $radius-sm;
+      padding: $spacing-sm;
+      border-left: 2px solid $color-accent;
+
+      .spec-label {
+        font-family: $font-display;
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $color-muted;
+        margin-bottom: 4px;
+      }
+
+      .spec-value {
+        font-family: $font-body;
+        font-weight: 700;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// --- Footer ---
+.footer {
+  background: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: $spacing-lg $spacing-sm;
+  text-align: center;
+
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $color-muted;
+    margin: 0;
+
+    span {
+      color: $color-accent;
+    }
+  }
+}
+
+// --- Botón volver ---
+.btn-back {
+  font-family: $font-display;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-accent;
+  border: 1px solid rgba($color-accent, 0.4);
+  background: transparent;
+  padding: $spacing-xs $spacing-md;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin-bottom: $spacing-lg;
+
+  &:hover {
+    background: rgba($color-accent, 0.1);
+    color: $color-accent;
+    text-decoration: none;
+  }
+}
