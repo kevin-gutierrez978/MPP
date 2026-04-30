@@ -13,20 +13,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Estilos propios (SASS compilado) -->
-   <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+   <link rel="icon" href="img/favicon-32x32.png" type="image/png" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-
   <!-- NAVBAR Bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navegación principal">
     <div class="container-fluid px-3 px-lg-5">
-
       <!-- Logo -->
       <a class="navbar-brand" href="index.html" title="Ir al inicio">
         The Personal<span>Computer</span>
       </a>
-
       <!-- Botón hamburguesa -->
       <button
         class="navbar-toggler"
@@ -35,11 +32,9 @@
         data-bs-target="#navbarMain"
         aria-controls="navbarMain"
         aria-expanded="false"
-        aria-label="Abrir menú de navegación"
-      >
+        aria-label="Abrir menú de navegación" >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Links de navegación -->
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ms-auto gap-1">
@@ -56,17 +51,14 @@
             <a class="nav-link" href="pages/mobo.html">Placa Madre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page/storage.html">Almacenamiento</a>
+            <a class="nav-link" href="pages/storage.html">Almacenamiento</a>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
   <!-- fin navbar -->
-
   <main>
-
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <p class="hero__tag">Guía de hardware</p>
@@ -81,18 +73,15 @@
       <a href="#componentes" class="btn-back">Explorar componentes ↓</a>
     </section>
     <!-- fin hero -->
-
     <!-- SECCIÓN DE CARDS -->
     <section class="components-section" id="componentes" aria-labelledby="section-title">
       <h2 class="section-title" id="section-title">Componentes</h2>
-
       <!-- Grid de cards -->
       <div class="components-grid">
-
         <!-- Card CPU -->
         <article>
           <a class="component-card" href="pages/cpu.html" title="Aprender sobre el procesador">
-            <span class="component-card__icon" aria-hidden="true"></span>
+            <img src="img/iconosmenu/logoCpu.png" alt="IconoDeCpu" class="component-card__img">
             <p class="component-card__name">CPU</p>
             <h3 class="component-card__title">Procesador</h3>
             <p class="component-card__desc">
@@ -101,11 +90,10 @@
             <span class="component-card__arrow">Ver más →</span>
           </a>
         </article>
-
         <!-- Card GPU -->
         <article>
           <a class="component-card" href="pages/gpu.html" title="Aprender sobre la tarjeta de video">
-            <span class="component-card__icon" aria-hidden="true"></span>
+            <img src="img/iconosmenu/logogpu.png" alt="IconoDeGpu" class="component-card__img">
             <p class="component-card__name">GPU</p>
             <h3 class="component-card__title">Tarjeta de Video</h3>
             <p class="component-card__desc">
@@ -114,11 +102,10 @@
             <span class="component-card__arrow">Ver más →</span>
           </a>
         </article>
-
         <!-- Card RAM -->
         <article>
           <a class="component-card" href="pages/ram.html" title="Aprender sobre la memoria RAM">
-            <span class="component-card__icon" aria-hidden="true"></span>
+            <img src="img/iconosmenu/logoRam.png" alt="IconoDeRam" class="component-card__img">
             <p class="component-card__name">RAM</p>
             <h3 class="component-card__title">Memoria RAM</h3>
             <p class="component-card__desc">
@@ -127,11 +114,10 @@
             <span class="component-card__arrow">Ver más →</span>
           </a>
         </article>
-
         <!-- Card MOBO -->
         <article>
           <a class="component-card" href="pages/mobo.html" title="Aprender sobre la placa madre">
-            <span class="component-card__icon" aria-hidden="true"></span>
+            <img src="img/iconosmenu/logoMobo.png" alt="IconoDeMobo" class="component-card__img">
             <p class="component-card__name">MOBO</p>
             <h3 class="component-card__title">Placa Madre</h3>
             <p class="component-card__desc">
@@ -140,11 +126,10 @@
             <span class="component-card__arrow">Ver más →</span>
           </a>
         </article>
-
         <!-- Card Storage -->
         <article>
           <a class="component-card" href="pages/storage.html" title="Aprender sobre el almacenamiento">
-            <span class="component-card__icon" aria-hidden="true"></span>
+            <img src="img/iconosmenu/logoHdd.png" alt="IconoDeAlmacenamiento" class="component-card__img">
             <p class="component-card__name">Storage</p>
             <h3 class="component-card__title">Almacenamiento</h3>
             <p class="component-card__desc">
@@ -153,22 +138,16 @@
             <span class="component-card__arrow">Ver más →</span>
           </a>
         </article>
-
       </div>
       <!-- fin grid -->
-
     </section>
     <!-- fin sección componentes -->
-
   </main>
-
   <!-- FOOTER -->
   <footer class="footer">
     <p>© 2026 <span>ThePersonalComputer</span> — Proyecto educativo de desarrollo web</p>
   </footer>
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
